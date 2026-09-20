@@ -9,5 +9,3 @@ None
 - Run the hangman.py script.
 - Start to guess the word.
 
-## Author Name
-[Neoh Boon Yee](https://github.com/neohboonyee99)
