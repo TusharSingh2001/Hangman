@@ -105,34 +105,3 @@ complete the word or run out of lives.
 
 A reasonable opening strategy is to try the common letters first — E, A, R, S,
 T, N — and use the revealed pattern to work out the rest.
-
-## Adding your own words
-
-The word list lives in `words.json`, kept separate from the code so you can
-extend it without touching any Python. Open it in any text editor and add
-entries to the list, keeping the existing formatting:
-
-```json
-["python", "keyboard", "mountain", "your-new-word"]
-```
-
-Save the file and run the game again to pick up the change.
-
-## Troubleshooting
-
-| What you see | What it means | Fix |
-| --- | --- | --- |
-| `zsh: command not found: python` | macOS has no `python` command | Use `python3 hangman.py` |
-| `'py' is not recognized` | Python isn't installed or isn't on PATH | Install from python.org and tick "Add Python to PATH" |
-| `FileNotFoundError: words.json` | You're in the wrong folder | `cd` into the project folder first |
-| `cd: no such file or directory` | The path doesn't exist | Check the folder name — a downloaded ZIP often unzips as `Hangman-main` |
-| `SyntaxError` on startup | Running under Python 2 | Use `python3` explicitly |
-
-## Project structure
-
-```
-hangman.py    the game logic
-words.json    the list of words the game chooses from
-README.md     this file
-```
-
